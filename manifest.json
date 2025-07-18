@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "DeltaMath Auto Solver",
+  "version": "1.0",
+  "description": "Automatically solves precalculus flashcards on DeltaMath",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.deltamath.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.deltamath.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
